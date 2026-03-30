@@ -1,35 +1,27 @@
-    /* Reset some default browser styles */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    /* Page base */
+
     body {
         background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-        /* beach image */
         background-size: cover;
-        /* makes it fill the screen */
         background-position: center;
-        /* keeps it centered */
         background-repeat: no-repeat;
-        /* prevents tiling */
         background-attachment: fixed;
-        /* optional: gives a cool scroll effect */
 
         font-family: sans-serif;
         line-height: 1.6;
     }
 
-    /* Layout wrapper */
     .page-layout {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
     }
 
-    /* Header + Footer shared */
     header,
     footer {
         display: flex;
@@ -37,14 +29,14 @@
         align-items: center;
     }
 
-    /* Header styling */
+
     header {
         background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
         color: white;
         padding: 16px 24px;
     }
 
-    /* Logo section */
+
     .logo {
         display: flex;
         align-items: center;
@@ -55,7 +47,7 @@
         border-radius: 6px;
     }
 
-    /* Navigation links */
+
     .links {
         display: flex;
         gap: 15px;
@@ -84,28 +76,30 @@
         transform: translateY(0);
     }
 
-    /* Main content */
+
     main {
         flex: 1;
         padding: 40px 20px;
     }
 
-    /* Title */
+
     h1 {
         color: rgb(251, 248, 248);
         margin-bottom: 20px;
     }
 
-    /* Container for items */
+
     .container {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
     }
 
-    /* Card item */
+
     .item {
-        background: #1e293b;
+        background: rgba(30, 41, 59, 0.6);/ backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
         color: white;
         padding: 20px;
         border-radius: 10px;
@@ -120,7 +114,7 @@
         background: #334155;
     }
 
-    /* Profile section */
+
     .profile-container {
         height: 300px;
         background: rgb(49, 49, 52);
@@ -129,7 +123,7 @@
         align-items: center;
     }
 
-    /* Profile image */
+
     .profile-pic {
         width: 150px;
         height: 150px;
@@ -139,7 +133,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    /* Footer */
+
     footer {
         background: #0f172a;
         color: white;
