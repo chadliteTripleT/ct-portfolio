@@ -7,7 +7,17 @@
 
     /* Page base */
     body {
-        background: rgb(19, 28, 90);
+        background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+        /* beach image */
+        background-size: cover;
+        /* makes it fill the screen */
+        background-position: center;
+        /* keeps it centered */
+        background-repeat: no-repeat;
+        /* prevents tiling */
+        background-attachment: fixed;
+        /* optional: gives a cool scroll effect */
+
         font-family: sans-serif;
         line-height: 1.6;
     }
