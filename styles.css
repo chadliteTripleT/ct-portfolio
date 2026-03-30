@@ -1,102 +1,138 @@
-body {
-    background: rgb(29, 41, 118);
-    font-family: sans-serif;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.page-layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 90vh;
-}
-
-.h1 {
-    color: rgb(251, 248, 248);
-
-}
-
-header,
-
-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.item {
-
-    <div class="profile-container"><img src="spearfishing.png" alt="Profile Picture"
-    class="profile-pic"></div>width: 300px;
-
-    .profile-pic {
-
-        width: 150px;
-        height: 150px;
-
-        border-radius: 50%;
-
-        object-fit: cover;
-
-        border: 2px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Reset some default browser styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    height: 300px;
-    background: rgb(205, 89, 118);
-    font-size: 36px;
-    color: rgb(9, 0, 0);
-}
+    /* Page base */
+    body {
+        background: rgb(19, 28, 90);
+        font-family: sans-serif;
+        line-height: 1.6;
+    }
 
-/* .social-logo {
-    width: 40px;
-    height: 40px;
-} */
+    /* Layout wrapper */
+    .page-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-footer nav a {
-    text-decoration: none;
-}
+    /* Header + Footer shared */
+    header,
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    /* Header styling */
+    header {
+        background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+        color: white;
+        padding: 16px 24px;
+    }
 
-header {
-    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
-    color: white;
-    padding: 16px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    /* Logo section */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
-.links {
-    display: flex;
-    gap: 15px;
-}
+    .logo img {
+        border-radius: 6px;
+    }
 
-.links a {
-    /*make button cool*/
-    font-size: 17px;
-    color: #38bdf8;
-    text-decoration: none;
-    background-color: #1e293b;
-    border-radius: 6px;
-    border: 2px solid transparent;
-    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
-    padding: 10px 20px;
-    font-weight: 501;
-}
+    /* Navigation links */
+    .links {
+        display: flex;
+        gap: 15px;
+    }
 
-.links a:hover {
-    border-color: #0ea5e9;
-    color: #0ea5e9;
-    transform: translateY(-2px);
-}
+    .links a {
+        font-size: 17px;
+        color: #38bdf8;
+        text-decoration: none;
+        background-color: #1e293b;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        padding: 10px 20px;
+        font-weight: 500;
 
-.links a:active {
-    transform: translateY(0);
-}
+        transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+        border-color: #0ea5e9;
+        color: #0ea5e9;
+        transform: translateY(-2px);
+    }
+
+    .links a:active {
+        transform: translateY(0);
+    }
+
+    /* Main content */
+    main {
+        flex: 1;
+        padding: 40px 20px;
+    }
+
+    /* Title */
+    h1 {
+        color: rgb(251, 248, 248);
+        margin-bottom: 20px;
+    }
+
+    /* Container for items */
+    .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    /* Card item */
+    .item {
+        background: #1e293b;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        min-width: 200px;
+        text-align: center;
+
+        transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .item:hover {
+        transform: translateY(-5px);
+        background: #334155;
+    }
+
+    /* Profile section */
+    .profile-container {
+        height: 300px;
+        background: rgb(49, 49, 52);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Profile image */
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+        background: #0f172a;
+        color: white;
+        padding: 15px 20px;
+        justify-content: center;
+    }
